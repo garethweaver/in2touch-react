@@ -1,0 +1,41 @@
+{
+  "name": "in2touch-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^5.8.4",
+    "material-icons": "^0.3.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-firebaseui": "^3.1.2",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "2.1.5",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "typeface-inconsolata": "^0.0.72",
+    "typeface-roboto": "^0.0.54"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0"
+  },
+  "homepage": "https://garethweaver.github.io/in2touch-react"
+}

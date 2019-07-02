@@ -1,0 +1,31 @@
+@import '../../styles/modules'
+
+.Intro
+  text-align: center
+
+  h1
+    margin-top: 50px
+
+  p
+    margin-bottom: 40px
+
+  &__buttons
+    display: flex
+
+    a
+      font-weight: bold
+      background: none
+      padding: 15px 10px
+      border: 1px solid $color-highlight
+      text-decoration: none
+      text-transform: uppercase
+      flex: 1 1 50%
+      font-size: $font-size-sm
+      color: $color-highlight
+
+      &:first-child
+        border-radius: 5px 0 0 5px
+        border-right: none
+
+      &:last-child
+        border-radius: 0 5px 5px 0
