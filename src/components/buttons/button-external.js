@@ -1,9 +1,8 @@
 import React from 'react'
-import './button-external.sass'
 
 const ButtonExternal = ({ ...props }) => (
   <a
-    className="Btn__external"
+    className="Btn__flex"
     href={props.to}
     target="_blank"
     rel="noopener noreferrer">

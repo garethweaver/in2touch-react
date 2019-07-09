@@ -1,8 +1,8 @@
 import React from 'react'
 import './header.sass'
 
-const Header = ({ children }) => (
-  <header className="Header">
+const Header = ({ children, className }) => (
+  <header className={`Header ${className ? className : ''}`}>
     {children}
   </header>
 )
