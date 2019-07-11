@@ -9,7 +9,8 @@ const Input = (props) => (
       id={props.name}
       placeholder={props.placeholder}
       value={props.value}
-      onChange={props.handleChange} />
+      onChange={props.handleChange}
+      autoFocus />
   </div>
 )
 
