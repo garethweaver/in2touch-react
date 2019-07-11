@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Layout from '../layouts/with-back'
+import Layout from '../layouts/index'
 import RESET_STORE from '../../store/actions/reset-store'
 
 const getDate = str => new Date(str).toString()

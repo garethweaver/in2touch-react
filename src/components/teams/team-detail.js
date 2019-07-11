@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Layout from '../layouts/with-back'
+import Layout from '../layouts/index'
 import FixtureList from '../fixtures/fixtures-list'
 import Button from '../buttons/button-external'
 

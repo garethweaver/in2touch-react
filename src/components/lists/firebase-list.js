@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withFirebase } from '../../firebase'
-import Layout from '../layouts/with-back'
+import Layout from '../layouts/index'
 import Loader from '../loader/loader'
 import Input from '../inputs/input'
 import ListItem from './list-item'
