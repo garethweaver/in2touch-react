@@ -10,7 +10,7 @@ const Header = ({ ...props }) => (
       {
         props.location.pathname === '/'
         ? <>
-          <span className="Logo">
+          <span className="Header__logo">
             In2Touch Unofficial
           </span>
           <Link to="/settings">

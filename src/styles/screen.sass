@@ -1,6 +1,7 @@
 $material-icons-font-path: '~material-icons/iconfont/'
 @import '~material-icons/iconfont/material-icons.scss'
 @import './modules'
+@import './partials/_base'
 
 *
   box-sizing: border-box
@@ -8,32 +9,20 @@ $material-icons-font-path: '~material-icons/iconfont/'
 body,
 html
   min-width: 300px
-  height: 100%
+  min-height: 100%
+
+html
+  background-image: $color-gradient
+  background-attachment: fixed
 
 body
   margin: 0
-  background-image: $color-gradient
-  background-attachment: fixed
   color: $color-text-default
   font-family: $font-family-base
 
 a
   text-decoration: none
   color: $color-links
-
-.page-wrap
-  padding: 80px 10px 50px
-  max-width: 500px
-  margin: 0 auto
-
-  &--no-header
-    padding-top: 20px
-
-  @media (min-width: 400px)
-    padding: 80px 20px 50px
-
-    &--no-header
-      padding-top: 20px
 
 h1, h2, h3, h4, h5, h6
   font-family: $font-family-mono
@@ -55,120 +44,3 @@ ol
 
   li
     margin: 3px 0
-
-.Margin
-  &--t
-    margin-top: 30px
-
-  &--b
-    margin-bottom: 30px
-
-.Flex
-  &__icon
-    display: flex
-    align-items: center
-
-    .material-icons
-      font-size: 20px
-      margin-right: 8px
-
-
-  &__header
-    display: flex
-    justify-content: space-between
-    align-items: center
-    padding-bottom: 10px
-    margin-bottom: 10px
-    border-bottom: 1px solid rgba(black, 0.1)
-
-  &__bar
-    width: 100%
-    display: flex
-    justify-content: space-between
-
-    p
-      margin: 0
-
-  &__heading
-    margin: 0
-    text-transform: uppercase
-
-.Card
-  padding: 15px 10px
-  border-radius: $border-radius
-  background: rgba(black, 0.1)
-
-.Text
-  &--small
-    font-size: $font-size-sm !important
-
-  &--medium
-    font-size: 16px !important
-
-
-.Heading__sm
-  font-size: 12px
-  margin: 0 0 5px
-  color: $color-text-muted
-  font-weight: normal
-
-.Color
-  &--muted
-    color: $color-text-muted
-
-  &--danger
-    color: #ffaf6a
-
-  &--warning
-    color: $color-attention
-
-  &--success
-    color: #73ff39
-
-
-.Logo
-  font-family: $font-family-mono
-  letter-spacing: 1px
-  font-size: 14px
-  text-transform: uppercase
-
-.Section
-  margin: 0 0 40px
-
-  a
-    text-decoration: underline
-    color: $color-text-muted
-
-.Btn__flex
-  width: 100%
-  display: flex
-  justify-content: space-between
-  font-weight: bold
-  background: none
-  padding: 15px 10px
-  border: 1px solid $color-highlight
-  text-decoration: none
-  text-transform: uppercase
-  font-size: 14px
-  color: $color-highlight
-
-  & + &
-    border-top: none
-
-  &:last-child
-    border-bottom-left-radius: $border-radius
-    border-bottom-right-radius: $border-radius
-
-  &:first-child
-    border-top-left-radius: $border-radius
-    border-top-right-radius: $border-radius
-
-  .material-icons
-    font-size: 18px
-
-.SwitchWrapper
-  position: relative
-
-  > div
-    position: absolute
-    width: 100%

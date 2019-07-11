@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Layout = ({ ...props }) => (
-  <div className="page-wrap">
+  <div className="Pagewrap">
     {props.children}
   </div>
 )

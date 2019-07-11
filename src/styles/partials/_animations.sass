@@ -1,0 +1,13 @@
+.fade-enter
+  opacity: 0
+  z-index: 1
+  transform: translateY(5px)
+
+  &.fade-enter-active
+    opacity: 1
+    transition: all 0.25s ease-in
+    transform: translateY(0)
+
+.fade-exit
+  &.fade-exit-active
+    display: none
