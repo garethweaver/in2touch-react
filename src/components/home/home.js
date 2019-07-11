@@ -5,7 +5,7 @@ import Intro from './intro'
 import SelectedTeams from '../teams/selected-teams'
 import SelectedLeagues from '../leagues/selected-leagues'
 
-const Main = ({ ...props }) => (
+const Home = ({ ...props }) => (
   <Layout>
     {props.teams.length > 0 &&
       <SelectedTeams teams={props.teams} />
@@ -26,4 +26,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(Main)
+export default connect(mapStateToProps)(Home)
