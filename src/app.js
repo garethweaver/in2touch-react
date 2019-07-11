@@ -30,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <div className={`Theme--${this.props.theme}`}>
-        <Router>
+        <Router basename="/in2touch-react">
           <ScrollToTop>
             <Header />
             <Container />
