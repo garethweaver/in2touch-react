@@ -17,7 +17,7 @@ const FixtureList = ({ fixtures }) => {
   const past = fixtures.filter(f => f.timestamp <= Date.now())
   return (
     <div>
-      <div className="mt">
+      <div className="Margin--t">
         <h2 className="Flex__icon">
           <span className="material-icons">
             check_circle_outline
@@ -28,7 +28,7 @@ const FixtureList = ({ fixtures }) => {
           {getFixtures(past, true)}
         </ol>
       </div>
-      <div className="mt">
+      <div className="Margin--t">
         <h2 className="Flex__icon">
           <span className="material-icons">
             schedule

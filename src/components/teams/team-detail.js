@@ -14,7 +14,7 @@ const TeamDetail = ({ ...props }) => {
           ? <FixtureList fixtures={t.fixtures} />
           : <em className="Color--muted">No team fixtures</em>
       }
-      <div className="ButtonRack">
+      <div className="Margin--t">
         <Button to={t.profileUrl}>
           View profile on In2Touch
         </Button>

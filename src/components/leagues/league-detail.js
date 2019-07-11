@@ -10,7 +10,7 @@ const LeagueDetail = ({ ...props }) => {
     <Layout>
       <h1>{l.name}</h1>
       <LeagueTable data={l.teams} />
-      <div className="ButtonRack">
+      <div className="Margin--t">
         <Button to={l.fixturesUrl}>
           View fixtures on In2Touch
         </Button>

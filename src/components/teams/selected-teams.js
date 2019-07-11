@@ -14,7 +14,7 @@ const getTeams = teams => {
 }
 
 const SelectedTeams = ({ teams }) => (
-  <div className="Selected mb">
+  <div className="Selected Margin--b">
     <h2 className="Flex__icon">
       <span className="material-icons">
         people
