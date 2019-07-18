@@ -17,28 +17,38 @@ const FixtureList = ({ fixtures }) => {
   const past = fixtures.filter(f => f.timestamp <= Date.now())
   return (
     <div>
-      <div className="Margin--t">
-        <h2 className="Flex__icon">
-          <span className="material-icons">
-            check_circle_outline
-          </span>
-          Past Fixtures
-        </h2>
-        <ol>
-          {getFixtures(past, true)}
-        </ol>
-      </div>
-      <div className="Margin--t">
-        <h2 className="Flex__icon">
-          <span className="material-icons">
-            schedule
-          </span>
-          Upcoming Fixtures
-        </h2>
-        <ol>
-          {getFixtures(future)}
-        </ol>
-      </div>
+      {past.length > 0 &&
+        <div className="Margin--t">
+          <h2 className="Flex__icon">
+            <span className="material-icons">
+              check_circle_outline
+            </span>
+            Past Fixtures
+          </h2>
+          <ol>
+            {getFixtures(past, true)}
+          </ol>
+        </div>
+      }
+      {future.length > 0 &&
+        <div className="Margin--t">
+          <h2 className="Flex__icon">
+            <span className="material-icons">
+              schedule
+            </span>
+            Upcoming Fixtures
+          </h2>
+          <ol>
+            {getFixtures(future)}
+          </ol>
+        </div>
+      }
+      {
+        (future.length === 0 && past.length === 0) &&
+        <div className="Margin--t">
+          <em className="Color--muted">No fixture data</em>
+        </div>
+      }
     </div>
   )
 }
