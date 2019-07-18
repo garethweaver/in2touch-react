@@ -9,9 +9,6 @@ class Firebase {
     this.auth = app.auth()
     this.db = app.database()
   }
-
-  // signOut = () => this.auth.signOut()
-
   config = () => this.db.ref('config')
   teams = () => this.db.ref('teams').orderByChild('nameLowercased')
   team = uid => this.db.ref(`teams/${uid}`)
