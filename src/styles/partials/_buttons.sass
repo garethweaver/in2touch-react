@@ -1,26 +1,38 @@
-.Btn__flex
-  width: 100%
-  display: flex
-  justify-content: space-between
-  font-weight: bold
-  background: none
-  padding: 15px 10px
-  border: 1px solid $color-highlight
-  text-decoration: none
-  text-transform: uppercase
-  font-size: 14px
-  color: $color-highlight
+.Btn
+  &__home
+    text-transform: uppercase
+    font-family: $font-family-mono
+    display: flex
+    align-items: center
 
-  & + &
-    border-top: none
+    .material-icons
+      font-size: 16px
+      margin-right: 10px
 
-  &:last-child
-    border-bottom-left-radius: $border-radius
-    border-bottom-right-radius: $border-radius
+  &__flex
+    width: 100%
+    display: flex
+    justify-content: space-between
+    font-weight: bold
+    background: none
+    padding: 15px 10px
+    border: 1px solid $color-highlight
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 14px
+    color: $color-highlight
 
-  &:first-child
-    border-top-left-radius: $border-radius
-    border-top-right-radius: $border-radius
+    & + &
+      border-top: none
 
-  .material-icons
-    font-size: 18px
+    &:last-child
+      border-bottom-left-radius: $border-radius
+      border-bottom-right-radius: $border-radius
+
+    &:first-child
+      border-top-left-radius: $border-radius
+      border-top-right-radius: $border-radius
+
+    .material-icons
+      font-size: 18px
+
