@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './fixture.sass'
 
 const getClassName = (arr) => {
@@ -33,7 +34,12 @@ const Fixture = ({ data, isPast }) => (
         ? <p className="Fixture--strong">{getResult(data.result)}</p>
         : <p className="Fixture__time Fixture--strong">{data.time}</p>
       }
-      <p><strong>{data.vs}</strong></p>
+      <Link to={`/team/${data.vsId}`}>
+        <strong>{data.vs}</strong>
+        <span className="Fixture__link-icon material-icons">
+          arrow_forward
+        </span>
+      </Link>
     </div>
     <p>{data.day}</p>
     {

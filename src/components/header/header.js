@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import ButtonHome from '../buttons/button-home'
+import ButtonBack from '../buttons/button-back'
 import './header.sass'
 
 const Header = ({ ...props }) => (
@@ -19,7 +19,7 @@ const Header = ({ ...props }) => (
             </span>
           </Link>
         </>
-        : <ButtonHome />
+        : <ButtonBack />
       }
     </div>
   </header>
