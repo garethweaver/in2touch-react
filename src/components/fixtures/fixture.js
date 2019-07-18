@@ -1,15 +1,22 @@
 import React from 'react'
 import './fixture.sass'
 
+const getClassName = (arr) => {
+  if (parseInt(arr[0]) > parseInt(arr[1])) {
+    return 'Color--success'
+  } else if (parseInt(arr[0]) < parseInt(arr[1])) {
+    return 'Color--danger'
+  } else {
+    return 'Color--warning'
+  }
+}
+
 const getResult = result => {
   let r
   if (result.length === 0) {
     r = <span className="Color--muted">No result yet</span>
   } else {
-    let arr = result.split(' - ')
-    r = <span className={
-        parseInt(arr[0]) > parseInt(arr[1]) ? 'Color--success' : 'Color--danger'
-      }>
+    r = <span className={getClassName(result.split(' - '))}>
       {result}
     </span>
   }
