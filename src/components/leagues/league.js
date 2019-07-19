@@ -1,8 +1,6 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import REMOVE_LEAGUE_BY_ID from '../../store/actions/remove-league-by-id'
-import Button from '../buttons/button-remove'
+import ButtonsEdit from '../buttons/buttons-edit'
 import './league.sass'
 
 const parseName = (name) => {
@@ -44,7 +42,9 @@ const League = ({ data, ...props }) => (
     <Link to={`/league/${data.id}`}>
       <div className="Flex__header">
         <span>{parseName(data.name)}</span>
-        <Button handleClick={e => { e.preventDefault(); props.handleClick(data.id)}} />
+        <ButtonsEdit
+          id={data.id}
+          type="leagues" />
       </div>
       <div className="League__list">
         {(data.teams && data.teams.length > 0)
@@ -61,10 +61,4 @@ const League = ({ data, ...props }) => (
   </div>
 )
 
-const mapDispatchToProps = dispatch => {
-  return {
-    handleClick: payload => dispatch(REMOVE_LEAGUE_BY_ID(payload)),
-  }
-}
-
-export default connect(null, mapDispatchToProps)(League)
+export default League

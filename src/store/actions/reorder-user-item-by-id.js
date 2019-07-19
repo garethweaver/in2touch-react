@@ -1,6 +1,6 @@
 export default payload => {
   return {
-    type: 'REMOVE_LEAGUE_BY_ID',
+    type: 'REORDER_USER_ITEM_BY_ID',
     payload: payload,
   }
 }

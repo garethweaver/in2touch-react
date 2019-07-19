@@ -1,9 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import Button from '../buttons/button-remove'
+import ButtonsEdit from '../buttons/buttons-edit'
 import NextFixture from '../fixtures/next-fixture'
-import REMOVE_TEAM_BY_ID from '../../store/actions/remove-team-by-id'
 
 const Team = ({ data, onClick, ...props }) => (
  <div className="Team Card">
@@ -12,7 +10,9 @@ const Team = ({ data, onClick, ...props }) => (
         <h3 className="Flex__heading">
           {data.name}
         </h3>
-        <Button handleClick={(e) => { e.preventDefault(); props.handleClick(data.id)}} />
+        <ButtonsEdit
+          id={data.id}
+          type="teams" />
       </div>
       {data.fixtures
         ? <NextFixture fixtures={data.fixtures}/>
@@ -22,10 +22,4 @@ const Team = ({ data, onClick, ...props }) => (
  </div>
 )
 
-const mapDispatchToProps = dispatch => {
-  return {
-    handleClick: payload => dispatch(REMOVE_TEAM_BY_ID(payload)),
-  }
-}
-
-export default connect(null, mapDispatchToProps)(Team)
+export default Team

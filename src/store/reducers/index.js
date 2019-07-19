@@ -1,3 +1,5 @@
+import { moveInArr } from '../helpers/helpers'
+
 const blankState = {
   config: {
     updatedAt: 0,
@@ -104,21 +106,25 @@ export default (state = initialState, action) => {
         }
       }
 
-    case 'REMOVE_TEAM_BY_ID':
+    case 'REMOVE_USER_ITEM_BY_ID':
       return {
         ...state,
         user: {
           ...state.user,
-          teams: state.user.teams.filter(x => x.id !== action.payload),
+          [action.payload.type]: state.user[action.payload.type]
+            .filter(x => x.id !== action.payload.id),
         }
       }
 
-    case 'REMOVE_LEAGUE_BY_ID':
+    case 'REORDER_USER_ITEM_BY_ID':
+      const u = [...state.user[action.payload.type]]
+      const ui = u.findIndex(x => x.id === action.payload.id)
+
       return {
         ...state,
         user: {
           ...state.user,
-          leagues: state.user.leagues.filter(x => x.id !== action.payload),
+          [action.payload.type]: moveInArr(u, ui, ui + action.payload.direction),
         }
       }
 
