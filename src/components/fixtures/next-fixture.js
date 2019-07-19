@@ -11,7 +11,9 @@ const Next = ({ next }) => (
       </p>
     </div>
     <p className="NextFixture__day">{next.day}</p>
-    <p className="NextFixture__location">{next.pitch}</p>
+    <p className="NextFixture__location">
+      {next.pitch} - <span className="Color--muted">{next.leagueName.split(' ')[0]}</span>
+    </p>
   </>
 )
 

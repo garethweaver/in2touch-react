@@ -54,7 +54,9 @@ const Fixture = ({ data, isPast }) => (
       </p>
     }
     {!isPast &&
-      <p>{data.pitch}</p>
+      <p>
+        {data.pitch} - <span className="Color--muted">{data.leagueName.split(' ')[0]}</span>
+      </p>
     }
   </div>
 )
