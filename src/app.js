@@ -18,6 +18,7 @@ class App extends Component {
         <ScrollToTop>
           <Header />
           <Container />
+          <div className="Pagebg" />
         </ScrollToTop>
       </Router>
     )
