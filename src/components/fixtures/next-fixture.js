@@ -24,7 +24,7 @@ const NextFixture = ({ fixtures }) => {
     <div className="NextFixture">
       {nextF
         ? <Next next={nextF} />
-        : <div className="NextFixture__none">No scheduled fixtures</div>
+        : <em className="Color--muted Text--small">No scheduled fixtures</em>
       }
     </div>
   )

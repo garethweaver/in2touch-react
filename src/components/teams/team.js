@@ -16,7 +16,7 @@ const Team = ({ data, onClick, ...props }) => (
       </div>
       {data.fixtures
         ? <NextFixture fixtures={data.fixtures}/>
-        : <em className="Color--muted Text--small">No upcoming fixtures</em>
+        : <em className="Color--muted Text--small">No scheduled fixtures</em>
       }
     </Link>
  </div>
