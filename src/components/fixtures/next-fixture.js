@@ -1,4 +1,5 @@
 import React from 'react'
+import Location from './location'
 import './next-fixture.sass'
 
 const Next = ({ next }) => (
@@ -11,15 +12,14 @@ const Next = ({ next }) => (
       </p>
     </div>
     <p className="NextFixture__day">{next.day}</p>
-    <p className="NextFixture__location">
-      {next.pitch} - <span className="Color--muted">{next.leagueName.split(' ')[0]}</span>
-    </p>
+    <Location
+      pitch={next.pitch}
+      leagueName={next.leagueName} />
   </>
 )
 
 const NextFixture = ({ fixtures }) => {
   const nextF = fixtures.find(f => f.timestamp > Date.now())
-
   return (
     <div className="NextFixture">
       {nextF

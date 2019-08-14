@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Location from './location'
 import './fixture.sass'
 
 const getClassName = (arr) => {
@@ -54,9 +55,9 @@ const Fixture = ({ data, isPast }) => (
       </p>
     }
     {!isPast &&
-      <p>
-        {data.pitch} - <span className="Color--muted">{data.leagueName.split(' ')[0]}</span>
-      </p>
+      <Location
+        pitch={data.pitch}
+        leagueName={data.leagueName} />
     }
   </div>
 )
