@@ -13,7 +13,7 @@ class TeamDetail extends Component {
     this.state = { team: null }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     let team = this.props.teams.find(x => x.id === this.props.match.params.id)
     if (team) {
       this.setState({ team })

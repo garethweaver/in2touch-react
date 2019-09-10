@@ -12,9 +12,6 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = { isOnline: true }
-  }
-
-  componentWillMount() {
     this.props.dispatch(firebaseListener())
   }
 

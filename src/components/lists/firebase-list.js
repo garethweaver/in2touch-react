@@ -14,17 +14,12 @@ class FirebaseList extends Component {
     this.state = { list: props[this.query] }
   }
 
-  componentWillMount() {
-    if (!this.props[this.query]) {
-      this.props.getFirebaseList(this.query)
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps[this.query] !== this.props[this.query]) {
+      this.setState({ list: this.props[this.query] })
     }
-  }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps[this.query] !== this.props[this.query]) {
-      this.setState({ list: nextProps[this.query] })
-    }
-    if (!nextProps[this.query]) {
+    if (!this.props[this.query]) {
       this.props.getFirebaseList(this.query)
     }
   }
