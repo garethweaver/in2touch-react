@@ -2,16 +2,13 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Layout from '../layouts/index'
 import RESET_STORE from '../../store/actions/reset-store'
+import { version } from '../../../package.json'
 
 const getDate = str => new Date(str).toString()
 
 const Settings = ({ ...props }) => (
   <Layout>
     <h1 className="Margin--b">Settings</h1>
-    <section className="Section">
-      <h2>Latest database update</h2>
-      <p>{getDate(props.config.updatedAt)}</p>
-    </section>
     <section className="Section">
       <h2>Add to homescreen</h2>
       <p>To add this app to your homescreen:</p>
@@ -34,6 +31,14 @@ const Settings = ({ ...props }) => (
           twitter
         </a> if you have any questions or comments.
       </p>
+    </section>
+    <section className="Section">
+      <h2>Latest database update</h2>
+      <p>{getDate(props.config.updatedAt)}</p>
+    </section>
+    <section className="Section">
+      <h2>Version number</h2>
+      <p>{version}</p>
     </section>
     <section className="Section">
       <button
