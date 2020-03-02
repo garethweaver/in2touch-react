@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Layout from 'components/layouts/index'
+import Button from 'components/buttons/button-theme'
 import RESET_STORE from 'store/actions/reset-store'
 import { version } from '../../../package.json'
 
@@ -14,6 +15,12 @@ const Settings = ({ ...props }) => (
       <p>To add this app to your homescreen:</p>
       <p><strong>On IOS</strong> click the share button and find the 'add to homescreen' grey icon.</p>
       <p><strong>On Android</strong> click the chrome menu button and then 'add to homescreen'.</p>
+    </section>
+    <section className="Section">
+      <h2>Theme</h2>
+      <Button theme={0} />
+      <Button theme={1} />
+      <Button theme={2} />
     </section>
     <section className="Section">
       <h2>Free to use!</h2>

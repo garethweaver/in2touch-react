@@ -1,0 +1,35 @@
+.Btn__theme
+  +circle(50px)
+  border: none
+  margin-right: 5px
+  border: 1px solid white
+
+  &--0
+    background-image: linear-gradient(135deg, #5663ff 10%, #12978b 100%)
+
+  &--1
+    background-image: linear-gradient(135deg, #29292b 10%, #111112 100%)
+
+  &--2
+    background-image: linear-gradient(135deg, #CE59F5 10%, #6D4A8C 100%)
+
+.Theme--0
+  --color-highlight: #00ffe7
+  --color-gradient: linear-gradient(135deg, #5663ff 10%, #12978b 100%)
+  --color-header: rgba(47, 26, 119, 0.86)
+  --color-inverse: rgba(black, 0.4)
+  --color-card: rgba(0, 0, 0, 0.1)
+
+.Theme--1
+  --color-highlight: #8e95c7
+  --color-gradient: linear-gradient(135deg, #29292b 10%, #111112 100%)
+  --color-header: #{rgba(27, 27, 27, 0.95)}
+  --color-inverse: #{rgba(white, 0.4)}
+  --color-card: #{rgba(255, 255, 255, 0.03)}
+
+.Theme--2
+  --color-highlight: #ffc0c0
+  --color-gradient: linear-gradient(135deg, #CE59F5 10%, #6D4A8C 100%)
+  --color-header: #{rgba(98, 39, 109, 0.90)}
+  --color-inverse: #{rgba(white, 0.4)}
+  --color-card: rgba(0, 0, 0, 0.1)
