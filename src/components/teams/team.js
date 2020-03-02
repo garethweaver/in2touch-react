@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ButtonsEdit from '../buttons/buttons-edit'
-import NextFixture from '../fixtures/next-fixture'
+import ButtonsEdit from 'components/buttons/buttons-edit'
+import NextFixture from 'components/fixtures/next-fixture'
 
 const Team = ({ data, onClick, ...props }) => (
  <div className="Team Card">

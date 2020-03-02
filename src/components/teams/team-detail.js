@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Layout from '../layouts/index'
-import FixtureList from '../fixtures/fixtures-list'
-import Button from '../buttons/button-external'
-import { withFirebase } from '../../firebase'
-import Loader from '../loader/loader'
+import Layout from 'components/layouts/index'
+import FixtureList from 'components/fixtures/fixtures-list'
+import Button from 'components/buttons/button-external'
+import { withFirebase } from 'firebase/index'
+import Loader from 'components/loader/loader'
 
 class TeamDetail extends Component {
 

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import FirebaseList from '../lists/firebase-list'
-import TeamDetail from '../teams/team-detail'
-import LeagueDetail from '../leagues/league-detail'
-import Home from '../home/home'
-import Settings from '../settings/settings'
+import FirebaseList from 'components/lists/firebase-list'
+import TeamDetail from 'components/teams/team-detail'
+import LeagueDetail from 'components/leagues/league-detail'
+import Home from 'components/home/home'
+import Settings from 'components/settings/settings'
 
 const Container = ({ location }) => (
   <TransitionGroup>

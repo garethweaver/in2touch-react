@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonNav from '../buttons/button-nav'
+import ButtonNav from 'components/buttons/button-nav'
 import './intro.sass'
 
 const Intro = ({ ...props }) => (

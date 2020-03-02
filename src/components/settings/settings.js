@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Layout from '../layouts/index'
-import RESET_STORE from '../../store/actions/reset-store'
+import Layout from 'components/layouts/index'
+import RESET_STORE from 'store/actions/reset-store'
 import { version } from '../../../package.json'
 
 const getDate = str => new Date(str).toString()

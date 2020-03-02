@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Layout from '../layouts/index'
-import Loader from '../loader/loader'
-import Input from '../inputs/input'
+import Layout from 'components/layouts/index'
+import Loader from 'components/loader/loader'
+import Input from 'components/inputs/input'
 import ListItem from './list-item'
-import GET_FIREBASE_LIST from '../../store/actions/get-firebase-list'
+import GET_FIREBASE_LIST from 'store/actions/get-firebase-list'
 
 class FirebaseList extends Component {
 

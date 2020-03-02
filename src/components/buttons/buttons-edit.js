@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { CSSTransition } from 'react-transition-group'
-import REMOVE_USER_ITEM_BY_ID from '../../store/actions/remove-user-item-by-id'
-import REORDER_USER_ITEM_BY_ID from '../../store/actions/reorder-user-item-by-id'
+import REMOVE_USER_ITEM_BY_ID from 'store/actions/remove-user-item-by-id'
+import REORDER_USER_ITEM_BY_ID from 'store/actions/reorder-user-item-by-id'
 import Button from './button-edit'
 import './buttons-edit.sass'
 

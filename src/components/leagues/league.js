@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ButtonsEdit from '../buttons/buttons-edit'
+import ButtonsEdit from 'components/buttons/buttons-edit'
 import './league.sass'
 
 const parseName = (name) => {
