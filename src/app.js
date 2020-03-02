@@ -29,19 +29,27 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <ScrollToTop>
-          <Header />
-          <Container />
-          <div className="Pagebg" />
-        </ScrollToTop>
-        {!this.state.isOnline &&
-          <Offline />
-        }
-      </Router>
+      <div className={`Theme--${this.props.theme}`}>
+        <Router>
+          <ScrollToTop>
+            <Header />
+            <Container />
+            <div className="Pagebg" />
+          </ScrollToTop>
+          {!this.state.isOnline &&
+            <Offline />
+          }
+        </Router>
+      </div>
     )
   }
 
 }
 
-export default connect(null, null)(App)
+const mapStateToProps = state => {
+  return {
+    theme: state.theme,
+  }
+}
+
+export default connect(mapStateToProps, null)(App)

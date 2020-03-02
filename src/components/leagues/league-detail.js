@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Layout from '../layouts/index'
+import Layout from 'components/layouts/index'
 import LeagueTable from './league-table'
-import Button from '../buttons/button-external'
+import Button from 'components/buttons/button-external'
 
 const LeagueDetail = ({ ...props }) => {
   const l = props.leagues.find(x => x.id === props.match.params.id)

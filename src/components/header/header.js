@@ -1,8 +1,8 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import ButtonBack from '../buttons/button-back'
-import ButtonHome from '../buttons/button-home'
+import ButtonBack from 'components/buttons/button-back'
+import ButtonHome from 'components/buttons/button-home'
 import './header.sass'
 
 const Header = ({ ...props }) => (

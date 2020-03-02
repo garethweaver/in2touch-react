@@ -13,6 +13,7 @@ const blankState = {
   },
   teams: null,
   leagues: null,
+  theme: 0,
 }
 
 
@@ -42,6 +43,12 @@ export default (state = initialState, action) => {
       return {
         ...state,
         ...caches,
+      }
+
+    case 'SET_THEME':
+      return {
+        ...state,
+        theme: action.payload
       }
 
     case 'SET_TEAMS_LIST':

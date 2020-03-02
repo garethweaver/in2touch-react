@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
-import ADD_TEAM from '../../store/actions/add-team'
-import ADD_LEAGUE from '../../store/actions/add-league'
+import ADD_TEAM from 'store/actions/add-team'
+import ADD_LEAGUE from 'store/actions/add-league'
 import './list-item.sass'
 
 const ListItem = ({ query, data, ...props }) => (

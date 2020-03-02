@@ -1,9 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Layout from '../layouts/index'
+import Layout from 'components/layouts/index'
 import Intro from './intro'
-import SelectedTeams from '../teams/selected-teams'
-import SelectedLeagues from '../leagues/selected-leagues'
+import SelectedTeams from 'components/teams/selected-teams'
+import SelectedLeagues from 'components/leagues/selected-leagues'
 
 const Home = ({ ...props }) => (
   <Layout>
