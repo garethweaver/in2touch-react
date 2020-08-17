@@ -21,6 +21,7 @@ const Settings = ({ ...props }) => (
       <Button theme={0} />
       <Button theme={1} />
       <Button theme={2} />
+      <Button theme={3} />
     </section>
     <section className="Section">
       <h2>Free to use!</h2>
