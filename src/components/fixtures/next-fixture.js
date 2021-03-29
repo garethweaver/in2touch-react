@@ -5,7 +5,7 @@ import './next-fixture.sass'
 const getAllNextOnSameDay = fixtures => {
   let next = []
   const nextIdx = fixtures.findIndex(f => f.timestamp > Date.now())
-  if (typeof nextIdx === 'number') {
+  if (nextIdx > -1) {
     next = fixtures.filter(f => {
       return new Date(f.timestamp).toDateString()
         === new Date(fixtures[nextIdx].timestamp).toDateString()
