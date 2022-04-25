@@ -8,9 +8,9 @@ const Location = ({ pitch, leagueName }) => (
     {(pitch && leagueName) &&
       ' - '
     }
-    { leagueName &&
+    {leagueName &&
       <span className="Color--muted">
-        {leagueName.split(' ')[0]}
+        {leagueName.substring(0, 20)}&hellip;
       </span>
     }
   </p>
