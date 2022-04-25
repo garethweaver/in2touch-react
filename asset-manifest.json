@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/in2touch-react/static/css/main.94fd13fa.chunk.css",
+    "main.js": "/in2touch-react/static/js/main.42e50c13.chunk.js",
+    "main.js.map": "/in2touch-react/static/js/main.42e50c13.chunk.js.map",
+    "runtime-main.js": "/in2touch-react/static/js/runtime-main.9c3449c3.js",
+    "runtime-main.js.map": "/in2touch-react/static/js/runtime-main.9c3449c3.js.map",
+    "static/css/2.88f8224b.chunk.css": "/in2touch-react/static/css/2.88f8224b.chunk.css",
+    "static/js/2.3e41537c.chunk.js": "/in2touch-react/static/js/2.3e41537c.chunk.js",
+    "static/js/2.3e41537c.chunk.js.map": "/in2touch-react/static/js/2.3e41537c.chunk.js.map",
+    "index.html": "/in2touch-react/index.html",
+    "precache-manifest.4bdebbe0bdcfe412c73697c809f77c9d.js": "/in2touch-react/precache-manifest.4bdebbe0bdcfe412c73697c809f77c9d.js",
+    "service-worker.js": "/in2touch-react/service-worker.js",
+    "static/css/2.88f8224b.chunk.css.map": "/in2touch-react/static/css/2.88f8224b.chunk.css.map",
+    "static/css/main.94fd13fa.chunk.css.map": "/in2touch-react/static/css/main.94fd13fa.chunk.css.map",
+    "static/js/2.3e41537c.chunk.js.LICENSE.txt": "/in2touch-react/static/js/2.3e41537c.chunk.js.LICENSE.txt",
+    "static/media/screen.sass": "/in2touch-react/static/media/MaterialIcons-Regular.d120c85b.ttf",
+    "static/media/index.css": "/in2touch-react/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c3449c3.js",
+    "static/css/2.88f8224b.chunk.css",
+    "static/js/2.3e41537c.chunk.js",
+    "static/css/main.94fd13fa.chunk.css",
+    "static/js/main.42e50c13.chunk.js"
+  ]
+}
