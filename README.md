@@ -1,6 +1,5 @@
-# In2Touch Unofficial
-
-[View it live here](https://garethweaver.github.io/in2touch-react/)
+# ⚠️ DEPRECATED ⚠️ 
+## Please visit 👉 [In2Touch Unofficial 2](https://github.com/garethweaver/in2touch-unofficial) 
 
 <img src="https://raw.githubusercontent.com/garethweaver/in2touch-react/master/screenshot.jpg" width="400" />
 
