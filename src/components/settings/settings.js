@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import Layout from 'components/layouts/index'
 import Button from 'components/buttons/button-theme'
 import RESET_STORE from 'store/actions/reset-store'
-import { version } from '../../../package.json'
 
 const getDate = str => new Date(str).toString()
 
@@ -13,8 +12,14 @@ const Settings = ({ ...props }) => (
     <section className="Section">
       <h2>Add to homescreen</h2>
       <p>To add this app to your homescreen:</p>
-      <p><strong>On IOS</strong> click the share button and find the 'add to homescreen' grey icon.</p>
-      <p><strong>On Android</strong> click the chrome menu button and then 'add to homescreen'.</p>
+      <p>
+        <strong>On IOS</strong> click the share button and find the 'add to
+        homescreen' grey icon.
+      </p>
+      <p>
+        <strong>On Android</strong> click the chrome menu button and then 'add
+        to homescreen'.
+      </p>
     </section>
     <section className="Section">
       <h2>Theme</h2>
@@ -26,18 +31,23 @@ const Settings = ({ ...props }) => (
     <section className="Section">
       <h2>Free to use!</h2>
       <p>
-        This is a free to use app created
-        by <a
+        This is a free to use app created by{" "}
+        <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.garethweaver.com">
+          href="https://www.garethweaver.com"
+        >
           Gareth Weaver
-        </a>. You can message me on <a
+        </a>
+        . You can message me on{" "}
+        <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://twitter.com/garethdweaver">
+          href="https://twitter.com/garethdweaver"
+        >
           twitter
-        </a> if you have any questions or comments.
+        </a>{" "}
+        if you have any questions or comments.
       </p>
     </section>
     <section className="Section">
@@ -46,20 +56,16 @@ const Settings = ({ ...props }) => (
     </section>
     <section className="Section">
       <h2>Version number</h2>
-      <p>{version}</p>
+      <p>DEPRECATED - 1.1.6</p>
     </section>
     <section className="Section">
-      <button
-        onClick={props.handleClick}
-        className="Btn__flex">
+      <button onClick={props.handleClick} className="Btn__flex">
         Clear local cache
-        <span className="material-icons">
-          sync
-        </span>
+        <span className="material-icons">sync</span>
       </button>
     </section>
   </Layout>
-)
+);
 
 const mapStateToProps = state => {
   return {
