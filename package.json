@@ -3,6 +3,9 @@
   "version": "2",
   "private": true,
   "dependencies": {},
+   "scripts": {
+    "deploy": "gh-pages -d build"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
